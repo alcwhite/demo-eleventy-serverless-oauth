@@ -14,7 +14,7 @@ exports.handler = async (event, context) => {
   }
 
   const csrfToken = generateCsrfToken();
-  const provider = event.queryStringParameters.provider;
+  const provider = "github";
   
   let oauth = new OAuth(provider);
   let config = oauth.config;
